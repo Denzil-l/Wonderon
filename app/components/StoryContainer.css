@@ -1,0 +1,289 @@
+
+.wrapper{
+    padding: 0;
+    padding-top: 35px;
+    align-items: center;
+    justify-content: center;
+}
+.story-container{
+    width: 1260px;
+    height: 620px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);    /* Две строки */
+    gap: 16px;     
+    margin: 0 auto;
+    margin-top: 0px;
+    position: relative;
+    opacity: 0;
+    animation: ap 1s ease-in-out forwards;
+}
+
+@media (max-width:950px){
+    .wrapper{
+        overflow-x: hidden;
+
+    }
+    .story-container{
+        padding: 100px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        height: 100%;
+    }
+    .story-container::before{
+        position: absolute;
+        content: '';
+        top: -2%;
+        left: -3%;
+        width: 350px;
+        height: 200px;
+        background: url('../../public/miracleIconRus.png') no-repeat;
+        background-size: contain;
+  
+    }
+    .story-container::after{
+        position: absolute;
+        content: '';
+        top: -2%;
+        right: -4%;
+        width: 350px;
+        height: 200px;
+        background: url('../../public/miracleIconEng.png') no-repeat;
+        background-size: contain;
+    }
+    .story-hands{
+        width: 300px;
+        position: absolute;
+        top: -5%;
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .story{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .story-small-container{
+        min-height: 200px;
+
+    }
+ 
+}
+@media (max-width:950px){
+    .story-qr{
+        display: none;
+      }
+    .story-container::before{
+        position: absolute;
+        content: '';
+        top: -2%;
+        left: -3%;
+        width: 250px;
+        height: 200px;
+        background: url('../../public/miracleIconRus.png') no-repeat;
+        background-size: contain;
+  
+    }
+    .story-container::after{
+        position: absolute;
+        content: '';
+        top: -2%;
+        right: -4%;
+        width: 250px;
+        height: 200px;
+        background: url('../../public/miracleIconEng.png') no-repeat;
+        background-size: contain;
+    }
+    .story-hands{
+        width: 300px;
+        position: absolute;
+        top: -5%;
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+  
+ 
+}
+@media (max-width:650px){
+    .wrapper{
+        /* overflow: auto; */
+    }
+    .story-container{
+        padding: 50px 20px 20px 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 40%);    /* Две строки */
+
+    }
+}
+@media (max-width:600px){
+    .story-container::before{
+        position: absolute;
+        content: '';
+        top: -2%;
+        left: 2%;
+        width: 150px;
+        height: 150px;
+        background: url('../../public/miracleIconRus.png') no-repeat;
+        background-size: contain;
+  
+    }
+    .story-container::after{
+        position: absolute;
+        content: '';
+        top: -2%;
+        right: 2%;
+        width: 150px;
+        height: 150px;
+        background: url('../../public/miracleIconEng.png') no-repeat;
+        background-size: contain;
+    }
+    .story-hands{
+        width: 200px;
+        position: absolute;
+        top: -5%;
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+@media (max-width:450px){
+    .story-container{
+        min-height: 100vh;
+    }
+    .story-container::before{
+        position: absolute;
+        content: '';
+        top: 0%;
+        left: 2%;
+        width: 120px;
+        height: 120px;
+        background: url('../../public/miracleIconRus.png') no-repeat;
+        background-size: contain;
+  
+    }
+    .story-container::after{
+        position: absolute;
+        content: '';
+        top: 0%;
+        right: 2%;
+        width: 120px;
+        height: 120px;
+        background: url('../../public/miracleIconEng.png') no-repeat;
+        background-size: contain;
+    }
+    .story-hands{
+        width: 150px;
+        position: absolute;
+        top: -2%;
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+@media (min-width:951px){
+    .story-qr{
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%,-60%);
+    }
+.story-container::before{
+    position: absolute;
+    content: '';
+    top: -15%;
+    left: -3%;
+    width: 300px;
+    height: 200px;
+    background: url('../../public/miracleIconRus.png') no-repeat;
+    background-size: contain;
+}
+.story-container::after{
+    position: absolute;
+    content: '';
+    top: -15%;
+    right: -4%;
+    width: 300px;
+    height: 200px;
+    background: url('../../public/miracleIconEng.png') no-repeat;
+    background-size: contain;
+}
+.story-hands{
+    width: 250px;
+    position: absolute;
+    top: -15%;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+}
+
+.story-header{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    border-bottom: 1px solid black;
+}
+.story-icon{
+    height: 100%;
+    object-fit: contain;
+    /* object-position: top; */
+    border: 2px solid black;
+}
+.story{
+    overflow: hidden;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    opacity: 0;
+    background: #dbe0e0e4;
+    box-shadow: -14px 4px 150px 0px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(255, 255, 255, 0.25) inset;
+    font-size: 20px;
+    animation: ap 1s ease-in-out forwards;
+}
+
+.story-number{}
+.story-text{
+    padding: 10px 10px 0px 10px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 22px;
+    line-height: 95%;
+}
+.story-author{
+    font-size: 35px;
+}
+.story-small-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.disappear{
+    animation: disap 1s ease-in-out forwards;
+
+}
+
+
+@keyframes ap{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes disap{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}

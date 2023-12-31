@@ -1,0 +1,645 @@
+
+.container{
+    border-radius: 30px;
+    box-shadow: 0px 5px 3.3px 0px rgba(209, 228, 245, 0.25) inset, -14px 4px 150px 0px rgba(0, 0, 0, 0.95);
+    width: 920px;
+    height: 660px;
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 auto;
+    background-size: cover;
+    transition: 2s;
+    animation: ap 1s ease-in-out;
+}
+.eng{
+    transition: 2s;
+    justify-content: flex-start;
+    background: url('../../public/SmallBackgroundEng.png') no-repeat #0F3B22;
+    background-size: cover;
+
+}
+.rus{
+    transition: 2s;
+    justify-content: flex-start;
+    background: yellow;
+    background: url('../../public/SmallBackgroundRus.png') no-repeat #0F3B22;
+    background-size: cover;
+
+}
+.form-container{
+   
+    width: 365px;
+    border-radius: 5px;
+    background:  rgba(255, 255, 255, 0.84);
+    filter: drop-shadow(6px 9px 30px rgba(0, 0, 0, 0.25));
+    clip-path: polygon(0 50px,50px 0,100% 0,100% 100%,0 100%);
+    margin-top: 55px;
+    margin-right: 45px;
+    padding: 40px 42px 30px 42px;
+    color: #D73520;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 50px;
+
+}
+.stories-link{
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    
+}
+.lines{
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.line{border-radius: 2px; height: 4px; width: 17%;}
+.line:not(:last-child){
+    margin-right: 4px;
+}
+
+.line:nth-child(1){background: #5A4DAE;}
+.line:nth-child(2){background: #EE73A6;}
+.line:nth-child(3){background: #F2BE0F;}
+.line:nth-child(4){background: #5A4DAE;}
+.line:nth-child(5){background: #EE73A6;}
+.line:nth-child(6){background: #F2BE0F;}
+.inplab{}
+.welcome{
+    font-size: 14px;
+}
+label{
+    display: block;
+    font-size: 12px;
+    margin-top: 14px;
+}
+input{
+    background: transparent;
+    border: 0;
+    width: 100%;
+    border-bottom: 1px solid #D73520;
+    outline: none;
+    color: #D73520;
+    padding: 5px;
+    height: 20px;
+}
+
+.area{
+    height: 85px;
+    width: 100%;
+    font-size: 12px;
+    text-align: left;
+    text-wrap: wrap;
+    overflow: hidden;
+    padding: 5px;
+    color: #D73520;
+    border: none;
+    outline: none;
+    background: none;
+    resize: none;
+    border-bottom: 1px solid #D73520;
+
+}
+.counter{
+    font-size: 7px;
+}
+.bigButton{
+    border-radius: 6px;
+    background: #D73520;
+    box-shadow: 6px 9px 30px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 365px;
+    margin-top: 5px;
+    margin-right: 45px;
+    padding: 10px 0px;
+
+}
+.button-text{
+    color: #FFF;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.active{
+    cursor: pointer;
+}
+.redButton{
+    cursor: pointer;
+    border-radius: 6px;
+    background: #D73520;
+    box-shadow: 6px 9px 30px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 50px;
+    margin-right: 100px;
+    margin-top: 50px;
+}   
+.redButton:first-child{
+    margin-right: 10px;
+}
+.languages{
+    margin-top: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+}
+
+.small-text{
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+    margin-top: 40px;
+    margin-right: 45px;
+    text-align: center;
+
+}
+
+.success{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.appear{
+animation: ap .5s forwards linear;
+}
+.disappear{
+    animation: disap .5s forwards linear;
+}
+
+@keyframes ap{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes disap{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+.form-page{
+    opacity: 0;
+ }
+ .x{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+ }
+ .icon{
+    margin-left: 5px;
+ }
+
+@media (max-width: 1350px){
+    .wrapper{
+        padding: 50px 30px;
+    }
+}
+@media (max-width:1160px){
+    .container{
+        width: 720px;
+        height: 560px;
+    }
+    .languages{
+        margin-top: 40%;
+        margin-right: 30px;
+    }
+    .redButton{
+        margin: 0;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+    .form-container{
+        margin-top: 10px;
+
+        width: 325px;
+    }
+    label{
+        margin-top: 8px;
+    }
+    .bigButton{      
+        width: 325px;
+    }
+}
+@media (max-width:960px){
+    .container{
+        width: 620px;
+        height: 460px;
+    }
+    .languages{
+        margin-top: 35%;
+        margin-right: 30px;
+    }
+    .redButton{
+        margin: 0;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    .form-container{
+   
+        width: 260px;
+        margin-top: 20px;
+        clip-path: polygon(0 50px,50px 0,100% 0,100% 100%,0 100%);
+        padding: 30px 32px 30px 32px;
+    }
+    .bigButton{
+       
+        width: 260px;
+        margin-top: 5px;
+        margin-right: 45px;
+        padding: 10px 0px;
+    
+    }
+    .welcome{
+        font-size: 10px;
+    }
+    label{
+        margin-top: 4px;
+        font-size: 8px;
+    }
+    input{
+        font-size: 8px;
+        height: 0px;
+        /* padding: 2px; */
+    }
+    .area{
+        height: 40px;
+        font-size: 8px;
+
+    }
+    .button-text{
+        font-size: 10px;
+    }
+}
+@media (max-width:768px){
+    .container{
+        width: 560px;
+        height: 400px;
+    }
+    .languages{
+        margin-top: 35%;
+    }
+    .form-container{
+   
+        width: 230px;
+        margin-top: 0px;
+        clip-path: polygon(0 40px,40px 0,100% 0,100% 100%,0 100%);
+        padding: 30px 32px 20px 32px;
+    }
+    .bigButton{
+       
+        width: 230px;
+        margin-top: 5px;
+        margin-right: 45px;
+        padding: 5px 0px;
+        
+    }
+    .lines{
+        margin-top: 4px;
+    }
+    .line{height: 2px;}
+    .welcome{
+        font-size: 8px;
+    }
+    label{
+        margin-top: 4px;
+        font-size: 8px;
+    }
+    input{
+        font-size: 8px;
+    }
+    .area{
+        height: 40px;
+        font-size: 8px;
+
+    }
+    .button-text{
+        font-size: 8px;
+    }
+}
+@media (max-width:680px){
+    .header{
+        height: 70px;
+    }
+    .stories-link{font-size: 10px; margin-right: 5px;}
+    img{
+        width: 10px;
+        height: 10px;
+        margin: 0;
+    }
+    .container{
+        width: 520px;
+        height: 360px;
+        border-radius: 15px;
+    }
+    .languages{
+        margin-top: 35%;
+    }
+    .form-container{
+   
+        width: 200px;
+        margin-top: 0px;
+        clip-path: polygon(0 35px,35px 0,100% 0,100% 100%,0 100%);
+        padding: 25px 20px 20px 25px;
+    }
+    .bigButton{
+       
+        width: 200px;
+        margin-top: 5px;
+        margin-right: 45px;
+        padding: 5px 0px;
+        
+    }
+    .lines{
+        margin-top: 2px;
+    }
+    .line{height: 2px;}
+    .welcome{
+        font-size: 8px;
+    }
+    label{
+        margin-top: 2px;
+        font-size: 7px;
+    }
+    input{
+        font-size: 7px;
+    }
+    .area{
+        height: 35px;
+        font-size: 7px;
+        padding: 0;
+        padding-left: 5px;
+
+    }
+    .button-text{
+        font-size: 8px;
+    }
+}
+@media (max-width:620px){
+    .stories-link{font-size: 8px; margin-right: 5px;}
+    img{
+        width: 8px;
+        height: 8px;
+        margin: 0;
+    }
+    .container{
+        width: 460px;
+        height: 300px;
+        border-radius: 10px;
+        background-size: contain;
+    }
+    .languages{
+        margin-top: 35%;
+    }
+    .form-container{
+   
+        width: 170px;
+        margin-top: 0px;
+        clip-path: polygon(0 25px,25px 0,100% 0,100% 100%,0 100%);
+        padding: 15px 15px 10px 20px;
+    }
+    .bigButton{
+       
+        width: 170px;
+        margin-top: 5px;
+        margin-right: 45px;
+        padding: 5px 0px;
+        
+    }
+    .lines{
+        margin-top: 2px;
+    }
+    .line{height: 2px;}
+    .welcome{
+        line-height: 120%;
+        font-size: 7px;
+    }
+    label{
+        margin-top: 2px;
+        font-size: 7px;
+    }
+    input{
+        padding: 0px;
+        font-size: 7px;
+        height: 0px;
+    }
+    .area{
+        height: 35px;
+        font-size: 7px;
+        padding: 0;
+        padding-left: 5px;
+
+    }
+    .button-text{
+        font-size: 8px;
+    }
+}
+@media (max-width:545px){
+    .container{
+        width: 467px;
+        height: 300px;
+        border-radius: 15px;
+        background-size: contain;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .container::before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background-color: rgba(2, 18, 1, 0.429);
+        border-radius: 15px;
+    }
+    .header{
+        height: 30px;
+        padding: 0;
+    }
+    .stories-link{font-size: 14px;}
+    img{width: 14px;height: 14px;}
+    .form-container{
+        margin: 0;
+    }
+    .bigButton{
+        margin: 0;
+        margin-top: 10px;
+    }
+}
+@media (max-width:450px){
+    .wrapper{
+        padding: 0px 5px;
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+        border: 0;
+        box-shadow: 0px 0px 0px 0px white;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        transition: 0s;
+        padding: 0px 10px;
+    }
+    .header{
+        margin-top: 30px;
+    }
+    .container::before{
+        content: '';
+        position: absolute;
+        top: 2%;
+        background: transparent no-repeat;
+        z-index: -2;
+        background-position: top;
+        background-image: url('../../public/Hands.png');
+        background-size: contain;
+        z-index: 0;
+        width: 100%;
+        height: 30vh;
+
+    }
+    .appear, .languages{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+
+    }
+   
+    .redButton:first-child{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .redButton:last-child{
+        margin-top: 80px;
+    }
+    .redButton{
+        margin: 0;
+        margin-top: 30px;
+        font-size: 28px;
+        padding: 15px 80px;
+    }
+    .header{
+        height: 30px;
+        padding: 0;
+    }
+    .stories-link{font-size: 14px;}
+    img{width: 14px;height: 14px;}
+    .form-container{
+        margin: 0;
+    }
+
+    .form-page{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0px 20px;
+    }
+    .form-container{
+        margin-top: 200px;
+        width: 100%;
+        height: 60vh;
+        clip-path: polygon(0 45px,45px 0,100% 0,100% 100%,0 100%);
+        padding: 35px 25px 20px 25px;
+    }
+    .bigButton{
+        margin: 0;
+
+        margin-top: 10px;
+
+        padding: 10px 20px ;
+        width: 100%;
+    }
+    .button-text{
+        font-size: 20px;
+
+    }
+    .thanks{
+        font-size: 18px;
+    }
+    .x{
+        font-size: 16px;
+    }
+    .small-text{
+        margin-right: 0;
+    }
+    .welcome{
+        font-size: 20px;
+        line-height: 130%;
+    }
+    .lines{
+        margin-top: 10px;
+    }
+    .line{
+        width: 12%;
+        height: 4px;
+    }
+    label{
+        font-size: 16px;
+        margin-top: 14px;
+    }
+    input{
+        height: 20px;
+        font-size: 16px;
+    }
+    .area{
+        height: 35%;
+        font-size: 16px;
+    }
+    .counter{
+        font-size: 16px;
+    }
+
+    .story-hands {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        object-fit: contain;
+        top: -2%;
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+
+
+
+}
