@@ -524,7 +524,7 @@ animation: ap .5s forwards linear;
         position: absolute;
         top: 2%;
         background: transparent no-repeat;
-        z-index: -2;
+        z-index: 1;
         background-position: top;
         background-image: url('../../public/Hands.png');
         background-size: contain;
@@ -559,7 +559,7 @@ animation: ap .5s forwards linear;
         height: 30px;
         padding: 0;
     }
-    .stories-link{font-size: 14px;}
+    .stories-link{font-size: 14px; padding: 10px 20px;}
     img{width: 14px;height: 14px;}
 
 
