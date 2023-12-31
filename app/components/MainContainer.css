@@ -559,7 +559,7 @@ animation: ap .5s forwards linear;
         height: 30px;
         padding: 0;
     }
-    .stories-link{font-size: 14px; padding: 10px 20px;}
+    .stories-link{font-size: 14px; line-height: 200%;}
     img{width: 14px;height: 14px;}
 
 
