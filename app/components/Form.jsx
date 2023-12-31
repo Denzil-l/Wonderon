@@ -50,7 +50,7 @@ export const Form = ({ lang, setVision, setAnim, socket }) => {
     return (
         <>
             <form action="#" className="form-container">
-                <p className="welcome">{lang === 'rus' ? 'Напишите Деду Морозу свои пожелания и благодарности, а мы поделимся ими на нашей платформе!' : "Write your New Year's gratitude and wishes here, and let's celebrate it together!"}</p>
+                <p className="welcome">{lang === 'rus' ? 'Напишите свои благодарности за 2023 год и пожелания Деду Морозу, а мы поделимся ими на нашей платформе!' : "Write your New Year's gratitude and wishes here, and let's celebrate it together!"}</p>
                 <Lines />
                 <InputWithLabel onChange={setName} value={name} title={lang === 'rus' ? 'Имя *' : 'Name *'} type={'text'} />
                 <InputWithLabel onChange={setEmail} value={email} title={lang === 'rus' ? 'Адрес электронной почты' : 'Email'} type={'email'} />

@@ -561,9 +561,7 @@ animation: ap .5s forwards linear;
     }
     .stories-link{font-size: 14px;}
     img{width: 14px;height: 14px;}
-    .form-container{
-        margin: 0;
-    }
+
 
     .form-page{
         width: 100%;
@@ -574,11 +572,13 @@ animation: ap .5s forwards linear;
         padding: 0px 20px;
     }
     .form-container{
+        margin: 0;
+
         margin-top: 200px;
         width: 100%;
-        height: 60vh;
+        height: fit-content;
         clip-path: polygon(0 45px,45px 0,100% 0,100% 100%,0 100%);
-        padding: 35px 25px 20px 25px;
+        padding: 35px 25px 80px 25px;
     }
     .bigButton{
         margin: 0;
@@ -617,15 +617,16 @@ animation: ap .5s forwards linear;
         margin-top: 14px;
     }
     input{
-        height: 20px;
+        height: 16px;
         font-size: 16px;
     }
     .area{
-        height: 35%;
+        height: 32%;
         font-size: 16px;
     }
     .counter{
-        font-size: 16px;
+        /* margin-top: 24px; */
+        font-size: 14px;
     }
 
     .story-hands {
@@ -634,7 +635,7 @@ animation: ap .5s forwards linear;
         position: absolute;
         object-fit: contain;
         top: -2%;
-        z-index: 1;
+        z-index: 0;
         left: 50%;
         transform: translate(-50%, 0);
     }
@@ -643,3 +644,37 @@ animation: ap .5s forwards linear;
 
 
 }
+
+@media (max-width:380px){
+    .form-container{
+        margin-top: 140px;
+        padding: 35px 25px 20px 25px;
+
+    }
+    .welcome{font-size: 16px;}
+    label, input{font-size: 14px; margin-top: 10px;}
+    .counter{font-size: 11px;}
+
+    .area{
+        height: 18%;
+    }
+    .bigButton{
+        margin-top: 4px;
+    }
+}
+/* @media (max-width:361px){
+    .form-container{
+        height: 57vh;
+        margin-top: 135px;
+    }
+    .welcome{font-size: 16px;}
+    label, input{font-size: 14px; margin-top: 8px;}
+    .counter{font-size: 11px;}
+
+    .area{
+        height: 30%;
+    }
+    .bigButton{
+        margin-top: 4px;
+    }
+} */

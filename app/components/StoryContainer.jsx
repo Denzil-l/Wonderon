@@ -229,7 +229,7 @@ export const StoryContainer = () => {
             <Story story={storyTwo} anim={storyTwoAnim} />
             <Story story={storyThree} anim={storyThreeAnim} />
             <Story story={storyFour} anim={storyFourAnim} />
-            <img src="/QrCode.png" alt="qrcode" className="story-qr" />
+            <img src="/qr.png" alt="qrcode" className="story-qr" />
         </div>
     )
 }
